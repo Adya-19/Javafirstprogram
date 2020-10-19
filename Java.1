@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Program1 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    // Prompt user for number of minutes
+    System.out.println("Enter the number of minutes:");
+    int min = sc.nextInt();
+
+     // Number of minutes in a year
+    int year = min / 525600;
+    int day = min / 1440;
+    int remainingMin = day % 525600;
+    System.out.println(min + " minutes is " + year + " years and "  +  remainingMin + " days ");
+    }
+ }
